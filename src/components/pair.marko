@@ -1,0 +1,17 @@
+<attrs/{ title, value }/>
+<div.outer><div.title>${title}</div><div.value>${value || "N/A"}</div></div>
+<style>
+  .outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .value {
+    padding-top: 4px;
+  }
+</style>

@@ -1,0 +1,24 @@
+<layout>
+  <@body>
+    <div.main>
+      <h2>Marko + Vercel Edge!</h2>
+      <pair
+        title="Your City"
+        value=input.request.headers.get("x-vercel-ip-city")
+      />
+      <pair
+        title="Your IP Address"
+        value=input.request.headers.get("x-real-ip")
+      />
+    </div>
+  </@body>
+</layout>
+
+<style>
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
